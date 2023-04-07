@@ -15,4 +15,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          echo total of $(ls -1 | wc -l) files
       - run: echo "🍏 This job's status is ${{ job.status }}."
